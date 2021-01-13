@@ -13,6 +13,8 @@ public class DynamicArray<T> implements Iterable<T>{
         //if(capacity < 0) throw new IllegalAccessException("illegal Capacity: ");
         this.capacity = capacity;
         arr = (T[]) new Object[capacity];
+
+
     }
     
     public DynamicArray() {
