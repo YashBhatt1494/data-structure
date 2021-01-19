@@ -22,7 +22,7 @@ public class DynamicArray<T> {
     }
     
     private int size() {
-        retur len;
+        return len;
     }
     
     private boolean isEmpty() {
@@ -36,7 +36,7 @@ public class DynamicArray<T> {
     private void add(T element){
         if(len + 1 >= capacity){
             capacity = (capacity == 0) ? 1 : capacity;
-            T[] newArr = (T[]) new Object[capacity*2]
+            T[] newArr = (T[]) new Object[capacity*2];
             int index = 0;
             for(T e : arr){
                 newArr[index++] = e;
