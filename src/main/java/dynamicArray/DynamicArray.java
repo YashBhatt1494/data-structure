@@ -3,7 +3,7 @@ package dynamicArray;
 import java.util.Iterator;
 
 @SuppressWarnings("unchecked")
-public class DynamicArray<T> implements Iterable<T>{
+public class DynamicArray<T> {
 
     private T[] arr;
     private int len = 0;
@@ -13,15 +13,38 @@ public class DynamicArray<T> implements Iterable<T>{
         //if(capacity < 0) throw new IllegalAccessException("illegal Capacity: ");
         this.capacity = capacity;
         arr = (T[]) new Object[capacity];
-
-
     }
     
     public DynamicArray() {
         this(16);
     }
-
-    public Iterator<T> iterator() {
-        return null;
+    
+    private int size() {
+        retur len;
     }
+    
+    private boolean isEmpty() {
+        return size() == 0 ;
+    }
+    
+    private T get(int index){
+        return arr[index];
+    }
+   
+    private void add(T element){
+        if(len + 1 >= capacity){
+            capacity = (capacity == 0) ? 1 : capacity;
+            T[] newArr = (T[]) new Object[capacity*2]
+            int index = 0;
+            for(T e : arr){
+                newArr[index++] = e;
+            }
+           newArr[index] = element;
+           len = index;
+        }
+    }
+    
+    
+    
+
 }
