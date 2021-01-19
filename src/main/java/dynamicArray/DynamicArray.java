@@ -29,11 +29,11 @@ public class DynamicArray<T> {
         return size() == 0 ;
     }
     
-    private T get(int index){
+    protected T get(int index){
         return arr[index];
     }
    
-    private void add(T element){
+    protected void add(T element){
         if(len + 1 >= capacity){
             capacity = (capacity == 0) ? 1 : capacity;
             T[] newArr = (T[]) new Object[capacity*2];
@@ -41,12 +41,8 @@ public class DynamicArray<T> {
             for(T e : arr){
                 newArr[index++] = e;
             }
-           newArr[index] = element;
-           len = index;
+           arr = newArr;
         }
+        arr[++len] = element;
     }
-    
-    
-    
-
 }
