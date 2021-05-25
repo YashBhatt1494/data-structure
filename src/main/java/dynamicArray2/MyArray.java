@@ -69,6 +69,12 @@ public class MyArray <T> {
 
         return true;
     }
+    protected void clear(){
+        for(int i = 0; i < len; i++){
+            arr[i] = null;
+        }
+
+    }
 
     protected boolean contains(T element){
         return this.indexOf(element)!= -1 ? true : false;

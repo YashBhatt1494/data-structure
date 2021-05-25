@@ -27,6 +27,7 @@ public class MyArrayImpl {
         System.out.println("My name is Yash contains IS ==> " + myArray.contains("10 Yash"));
 
         myArray.removeObj("10 Yash");
+        myArray.clear();
         myArray.printArray();
 
     }
