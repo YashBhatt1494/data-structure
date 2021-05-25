@@ -1,9 +1,6 @@
-package dynamicArray2;
+package DataStructure.dynamicArray2;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Objects;
 
 @SuppressWarnings("unchecked")
 public class MyArray <T> {

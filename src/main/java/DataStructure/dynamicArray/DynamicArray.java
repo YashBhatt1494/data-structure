@@ -1,6 +1,4 @@
-package dynamicArray;
-
-import java.util.Iterator;
+package DataStructure.dynamicArray;
 
 //https://github.com/williamfiset/data-structures/blob/master/com/williamfiset/datastructures/dynamicarray/DynamicArray.java
 

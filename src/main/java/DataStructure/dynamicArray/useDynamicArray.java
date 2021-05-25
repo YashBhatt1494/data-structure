@@ -1,4 +1,4 @@
-package dynamicArray;
+package DataStructure.dynamicArray;
 
 
 

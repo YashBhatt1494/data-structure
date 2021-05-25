@@ -1,4 +1,4 @@
-package dynamicArray2;
+package DataStructure.dynamicArray2;
 
 public class MyArrayImpl {
 
