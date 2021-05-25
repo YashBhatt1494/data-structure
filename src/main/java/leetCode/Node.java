@@ -1,3 +1,5 @@
+package leetCode;
+
 class Node {
     int val;
     Node next;
